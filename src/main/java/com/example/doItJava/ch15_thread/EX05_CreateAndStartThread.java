@@ -1,4 +1,5 @@
 package com.example.doItJava.ch15_thread;
+
 // 이너클래스를 활용한 쓰레드 객체 생성 및 실행
 public class EX05_CreateAndStartThread {
     public static void main(String[] args) {
