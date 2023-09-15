@@ -10,7 +10,7 @@ class MyThread extends Thread {
     }
 }
 
-public class ThreadProperties_2 {
+public class EX07_ThreadProperties_2 {
     public static void main(String[] args) {
         // CPU 코어 수
         System.out.println("코어 수: " + Runtime.getRuntime().availableProcessors());

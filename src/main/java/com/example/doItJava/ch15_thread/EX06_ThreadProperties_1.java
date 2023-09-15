@@ -1,7 +1,7 @@
 package com.example.doItJava.ch15_thread;
 
 // 쓰레드 객체의 속성 다루기
-public class ThreadProperties_1 {
+public class EX06_ThreadProperties_1 {
     public static void main(String[] args) {
         // 객체 참조하기, 쓰레드의 개수 가져오기
         Thread curThread = Thread.currentThread();

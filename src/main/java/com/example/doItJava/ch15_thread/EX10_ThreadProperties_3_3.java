@@ -3,7 +3,7 @@ package com.example.doItJava.ch15_thread;
 // 데몬 쓰레드는 자신을 호출한 주 쓰레드가 종료되면 함께 종료되는것이 아니다.
 // 데몬 쓰레드는 주 쓰레드가 아니라 프로세스내의 모든 일반 쓰레드가 종료되어야 종료된다
 // 여기서는 일반 쓰레드인 thread1 이 아직 끝나지 않았기 때문에 지속된다.
-public class ThreadProperties_3_3 {
+public class EX10_ThreadProperties_3_3 {
     public static void main(String[] args) {
 
         // 일반 쓰레드
