@@ -9,7 +9,10 @@ class MyData13 {
     public void plusData() {
         synchronized (this) {
             int data = this.data;
-            try { Thread.sleep(2000);} catch(InterruptedException e) {}
+            try {
+                Thread.sleep(2000);
+            } catch (InterruptedException e) {
+            }
             this.data = data + 1;
         }
     }
@@ -17,7 +20,8 @@ class MyData13 {
 
 class PlusThread13 extends Thread {
     MyData13 myData;
-    public PlusThread13(MyData13 data){
+
+    public PlusThread13(MyData13 data) {
         this.myData = data;
     }
 
@@ -27,6 +31,7 @@ class PlusThread13 extends Thread {
         System.out.println(getName() + "실행 결과: " + myData.data);
     }
 }
+
 public class EX13_SynchronizedBlock {
     public static void main(String[] args) {
         // 공유 객체 생성

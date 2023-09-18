@@ -18,7 +18,7 @@ class MyThread3 extends Thread {
 
 public class EX08_ThreadProperties_3_1 {
     public static void main(String[] args) {
-        
+
         // 일반 쓰레드
         Thread thread1 = new MyThread3();
         thread1.setDaemon(false); // 일반 쓰레드로 설정

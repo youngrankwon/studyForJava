@@ -3,9 +3,13 @@ package com.example.doItJava.ch15_thread;
 // 공유 객체
 class MyData2 {
     int data = 3;
+
     public void plusData() {
         int mydata = data;
-        try {Thread.sleep(2000);} catch (InterruptedException e){}
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+        }
         data = mydata + 1;
     }
 }
@@ -13,7 +17,8 @@ class MyData2 {
 // 공유 객체를 사용하는 쓰레드
 class PlusThread2 extends Thread {
     MyData2 myData;
-    public PlusThread2(MyData2 mydata){
+
+    public PlusThread2(MyData2 mydata) {
         this.myData = mydata;
     }
 
@@ -23,6 +28,7 @@ class PlusThread2 extends Thread {
         System.out.println(getName() + "실행 결과: " + myData.data);
     }
 }
+
 public class EX11_TheNeedsForSynchronized {
     public static void main(String[] args) {
         // 공유 객체 생성

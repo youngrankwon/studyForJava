@@ -47,7 +47,6 @@ public class EX14_KeyObject_1 {
                 data.abc();
             }
 
-            ;
         }.start();
 
         new Thread() {
@@ -55,7 +54,6 @@ public class EX14_KeyObject_1 {
                 data.bcd();
             }
 
-            ;
         }.start();
 
         new Thread() {
@@ -63,7 +61,6 @@ public class EX14_KeyObject_1 {
                 data.cde();
             }
 
-            ;
         }.start();
 
     }
